@@ -109,6 +109,9 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+template-env/
+*env/
+bankaya_challenge/
 
 # Spyder project settings
 .spyderproject
@@ -127,3 +130,33 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+### VisualStudioCode ###
+.vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+
+### PyCharm IDE
+.idea
+
+# Local History for Visual Studio Code
+.history/
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+# MAC locally resources management
+.DS_Store
+
+# File for development purposes
+.py
+
+# local-development-environment
+.devcontainer

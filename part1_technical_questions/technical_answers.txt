@@ -1,0 +1,42 @@
+1. What are the supported data types in Python?
+		Integers, Strings, Complex numbers, Booleans, Floating numbers, Lists
+
+2. What is the difference between tuples and lists in Python?
+		Mutability between data structures: tuple are unmutable, lists are mutables objects. Tuples are more memory efficient than the lists.
+
+3. What are Python decorators?
+		Are functions that encasulates other functions and controlate the behaviour of these other functions; making more pythonic the code. 
+
+4. What are generators in Python?
+		It's a special function that returns an interator object using a sequence value. Generators use yield keyword to return a class Generator object. Function generator return control who's call and can save states on memory.
+
+5. What are shallow and deep copy operations?
+		Copy is a module on Python language. Copy module have copy (shallow) and deepcopy functions. 
+		Shallow copy function build a new collection object and then fill it with references to the secondary objects found on the original colecction; copy process does'n repeat then, and don't create copies of the secondary objects, any change on a copy of the object reflects on the original object.
+		Deepcopy it's the process to reference copying recursively on new collection object, it a recursively copy of colecction references found on the original object collection; any changes made on a colecction object copied do not reflect on the original collection object.
+
+6. Explain Dependency Injection?
+		Programming technique makes a class independient of its dependencies; this decoupling the usage of and object from its creation. Reduce the frequency with which need to change a class; it means you can replace  dependencies without changing the class that uses them. Reduce boilerplace code and improves flexibility.
+
+7. Explain how you can make a Python Script executable on Unix?
+		1.- Create a Python script with use cases, functions and all the code you use.
+		2.- Use the sys or the argparse modules to get parameters introduced by user/client to execute the script using functions with input values parametrized.
+		3.- On the main function (or other to call on main), you can implement the parametrized tags to use for each values client/user's inserted on script call.
+		4.- Create a file and setup the .sh extension, on it write: 
+						#!/bin/sh
+
+						python <name of the app contains the main function> <params_tags your script use>
+
+				for example:
+						#!/bin/sh
+
+						python app.py --banco_nombre "Bancoppel" --cantidad_datos 20 --tipo_generador "S"
+
+				to use or know the parameters tags script use it, you can take info from the shell command: 
+
+						python app.py --help
+
+				this means: python keyword is the python language use it to develop and execute by machine script, app.py it is the python script application contain the main function and --help parameter, it is the tag name to a helper utility that print on the shell the information necesary to use the script and the parameters.
+
+		5.- To execute the script on shell or command line, to discretion mode, you can use the example one by one on time to use the script.
+		6.- To execute the script recurrently, you can stablish a cronjob or a cron bash executing script, settting up the hours, days, dates and other timing parameters to call the script and execute automatically. This saves a lot of time using human-machine manually.
