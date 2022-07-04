@@ -123,6 +123,6 @@ pytest tests -vv
 
 <!-- ARCHITECTURE EXPLAIN -->
 ## Architecture Explain
-![Architecture Microservice Design Diagram](../api_challenge_bankaya/docs/architecture_diagram/domaindrivendesign_n-layered_architecture.png)
+![Architecture Microservice Design Diagram](https://github.com/jorgeMorfinezM/api_challenge_bankaya/blob/main/docs/architecture_diagram/domaindrivendesign_n-layered_architecture.png)
 
 Make with ❤️ by Jorge Morfinez Mojica
