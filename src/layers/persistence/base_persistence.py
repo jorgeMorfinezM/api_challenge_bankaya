@@ -23,6 +23,6 @@ class APIConnect(abc.ABC):
         raise NotImplementedError
 
     @abc.abstractmethod
-    def connect(self):
+    def request(self, params):
         """initialize connection or session to api client"""
         raise NotImplementedError

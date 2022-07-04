@@ -7,16 +7,17 @@ from src.layers.domain.exceptions import InvalidFactsRange
 
 
 @dataclass
-class CatFacts:
+class Facts:
     """CatGFacts model to looking for data from API Client requested"""
 
-    facts: float
+    animal_type: str
+    fact_amount: float
 
     def __validate_facts_range(self):
 
         is_valid_facts_range = False
 
-        if 1 <= self.facts <= 500:
+        if 1 <= self.fact_amount <= 500:
             is_valid_facts_range = True
 
         if not is_valid_facts_range:
